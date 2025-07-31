@@ -15,7 +15,7 @@ const Cart = () => {
 
   const fetchCartItems = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/cart");
+      const response = await axios.get("https://e-commerce-react-backend-wkkw.onrender.com/cart");
       setCartItems(response.data);
       setLoading(false);
     } catch (error) {
@@ -26,7 +26,7 @@ const Cart = () => {
 
   const removeFromCart = async (cartItemId) => {
     try {
-      await axios.delete(`http://localhost:3000/cart/${cartItemId}`);
+      await axios.delete(`https://e-commerce-react-backend-wkkw.onrender.com/cart/${cartItemId}`);
       fetchCartItems(); // Refresh cart after removal
     } catch (error) {
       console.error("Error removing item from cart:", error);

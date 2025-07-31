@@ -14,7 +14,7 @@ const ProductDetail = () => {
 
     const getProductDetail = async()=>{
 
-       await axios.get("http://localhost:3000/products/"+productId)
+       await axios.get("https://e-commerce-react-backend-wkkw.onrender.com/products/"+productId)
         .then((res)=>{
             console.log(res);
             
@@ -30,10 +30,10 @@ const ProductDetail = () => {
      
       <div className="main">
         <div className="left">
-            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%" alt="" />
+            <img src="https://www.shutterstock.com/image-vector/man-inscription-admin-icon-outline-600nw-1730974153.jpg" alt="ADMIN RIGHTS" />
         </div>
         <div className="right">
-            <h1>Title</h1>
+            <h1>Restricted</h1>
            {/* <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, perspiciatis quas nostrum est non quia dolor odio dolore? Error, distinctio.</p> */}
         </div>
       </div>

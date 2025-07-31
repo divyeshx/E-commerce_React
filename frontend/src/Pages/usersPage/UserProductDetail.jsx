@@ -17,7 +17,7 @@ const UserProductDetail = () => {
 
     const getProductDetail = async()=>{
 
-       await axios.get("http://localhost:3000/products/"+productId)
+       await axios.get("https://e-commerce-react-backend-wkkw.onrender.com/products/"+productId)
         .then((res)=>{
             console.log(res);
             setproductData(res.data.product)
@@ -30,7 +30,7 @@ const UserProductDetail = () => {
 
     const addToCart = async () => {
         try {
-            await axios.post(`http://localhost:3000/cart/add/${productId}`);
+            await axios.post(`https://e-commerce-react-backend-wkkw.onrender.com/cart/add/${productId}`);
             alert('Product added to cart successfully!');
         } catch (error) {
             console.error('Error adding to cart:', error);

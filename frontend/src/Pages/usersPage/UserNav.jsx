@@ -12,7 +12,7 @@ const UserNav = () => {
 
   const fetchCartCount = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/cart");
+      const response = await axios.get("https://e-commerce-react-backend-wkkw.onrender.com/cart");
       setCartCount(response.data.length);
     } catch (error) {
       console.error("Error fetching cart count:", error);
