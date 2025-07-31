@@ -89,12 +89,41 @@ h2{
   font-weight: 500;
   font-size: 1rem;
   transition: background 0.18s;
-  width: 150px;
-  margin-left: 555px;
+  margin-left: 15px;
 }
 
 .right a:hover {
   background: #0056b3;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.mode-switch-btn {
+  background: #28a745;
+  color: #fff;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.18s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  order: 1;
+}
+
+.mode-switch-btn:hover {
+  background: #218838;
+}
+
+.mode-switch-btn i {
+  font-size: 1.1rem;
 }
 
 .ri-search-line{

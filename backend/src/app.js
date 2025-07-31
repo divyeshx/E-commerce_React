@@ -13,7 +13,9 @@ const { log } = require("console")
 app.use(morgon("dev"))
 
 
-app.use(cors())
+app.use(cors({
+    origin : "https://e-commerce-react-frontend-r3wv.onrender.com"
+}))
 
 app.use(express.json())
 app.use(express.urlencoded({extended : true}))
